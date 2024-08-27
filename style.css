@@ -1,0 +1,171 @@
+    
+:root {
+    /*Tabela de cores caso ajuda a montar a paleta de cores deixe sua opnião*/
+    --cordecor: #007bff;
+}
+
+body {
+    background-color: rgb(236, 233, 233); 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: var(--cordecor);
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 100px;
+}
+
+
+.box-texto {
+    background-color: var(--cordecor);
+    border-radius: 25px;
+    margin: 20px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto-box-texto {
+    display: flex;
+    width:100%
+    
+}
+
+.navegacao {
+    background-color: rgb(19, 95, 194);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7px;
+}
+
+.navegacao a {
+    font-size: 20px;
+    margin-top: 5px;
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    font-weight: bolder;
+    padding-right: 15px;
+    transition: transform 0.3s ease; /* Reduzi o tempo de 1s para 0.3s para uma animação mais suave */
+}
+
+.navegacao a:visited {
+    text-decoration: none;
+    
+}
+
+.navegacao a:hover {
+    transform: scale(1.2);
+}
+.img1 {
+    width:300px;
+    border-radius: 25px;
+    margin-left: 5px;
+}
+footer {
+    margin-bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    color: var(--cordecor);
+    display: flex;
+    justify-content: center;
+}
+
+strong {
+    font-weight: bolder;
+    font-size: 24px;
+    color: rgb(1, 20, 185);
+}
+
+.imgDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.imgDiv img {
+    width: 30%;
+}
+
+.imgDiv img {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Define um tamanho máximo */
+    display: block;
+    margin: 0 auto; /* Centraliza as imagens */
+}
+
+/* Para telas pequenas, como dispositivos móveis */
+@media screen and (max-width: 600px) {
+    .imgDiv img {
+        max-width: 100%;
+    }
+}
+
+/* Para telas maiores, como tablets ou desktops */
+@media screen and (min-width: 601px) {
+    .imgDiv img {
+        max-width: 80%; /* Mantém as imagens em 80% da largura disponível */
+    }
+}
+
+/* Estilo para telas muito grandes, como desktops widescreen */
+@media screen and (min-width: 1024px) {
+    .imgDiv img {
+        max-width: 80%; /* Limita as imagens a 50% da largura da tela */
+    }
+}
+
+@media(max-width:800px){
+    .box-texto{
+        color: rgb(255,255,255);
+        font-size: 1rem;
+    }
+
+    .imgDiv {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .img1{
+        width: 100%;
+        margin-left: 10px;
+    }
+    .texto-box-texto{
+        text-align: justify;
+       width: 100%;
+    }
+
+    .texto-box-texto {
+        color: white;
+    }
+}
+p{
+    text-align: justify;
+    font-family: Georgia;
+    font-size: 20;
+}
+h2{
+    font-family: Garamond;
+    font-size: 44px;
+}
